@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Image.asset('images/icon.jpg'),
-            Image.asset('images/icon/user.png'),
+            Image.asset('images2/icon.jpg'),
+            Image.asset('images2/icon/user.png'),
             //FutureBuilder는 비동기 데이터를 이용해 화면을 구성하는 위젯
             FutureBuilder(
                 future: useRootBundle(), //useRootBundle() 함수 호출
