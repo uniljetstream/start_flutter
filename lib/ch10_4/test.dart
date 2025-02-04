@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
               title: Text('Test'),
               backgroundColor: Colors.cyan,
             ),
-            body: SingleChildScrollView(
-                scrollDirection: Axis.vertical,
+            body: SingleChildScrollView(  //스크롤
+                scrollDirection: Axis.vertical,   //수직 스크롤
                 child: Column(
                   children: <Widget>[
                     Container(
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
                       child: Row(
                         children: <Widget>[
                           Container(color: Colors.red, width: 100),
-                          Expanded(
+                          Expanded(   //red를 제외한 영역을 1대1로 amber, yellow가 차지
                               flex: 1,
                               child: Container(
                                 color: Colors.amber,
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                           Image.asset('images_10_4/lab_instagram_icon_1.jpg'),
                           Image.asset('images_10_4/lab_instagram_icon_2.jpg'),
                           Image.asset('images_10_4/lab_instagram_icon_3.jpg'),
-                          Spacer(),
+                          Spacer(), //공백
                           Image.asset('images_10_4/lab_instagram_icon_4.jpg')
                         ],
                       ),
