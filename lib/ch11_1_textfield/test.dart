@@ -36,7 +36,7 @@ class TextState extends State<TestScreen> {
   }
 
   @override
-  void ininState() {
+  void initState() {
     super.initState();
     controller.addListener(_printValue);
   }
