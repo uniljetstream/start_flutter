@@ -54,14 +54,13 @@ class TextState extends State<TestScreen> {
                     Navigator.of(context).pop();
                   },
                   child: Text("OK"))
-
             ],
           );
         });
   }
 
   _bottomSheet() {
-    showBottomSheet(
+    showBottomSheet(  //보텀시트가 올라와도 원래 위젯 사용 가능
         context: context,
         backgroundColor: Colors.yellow,
         builder: (context) {
@@ -88,7 +87,7 @@ class TextState extends State<TestScreen> {
   }
 
   _modalBottomSheet() {
-    showModalBottomSheet(
+    showModalBottomSheet(   //보텀 시트가 올라오면 원래 위젯 컨트롤 불가
         context: context,
         backgroundColor: Colors.yellow,
         builder: (context){
