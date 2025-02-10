@@ -25,6 +25,7 @@ class _HomeScreenState extends State<MyApp>
         home: Scaffold(
             appBar: AppBar(
               title: Text('Tab Test'),
+              backgroundColor: Colors.blue,
               bottom: TabBar(
                 controller: controller,
                 tabs: <Widget>[
