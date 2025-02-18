@@ -21,6 +21,8 @@ class MyAppState extends State<MyApp> {
       "accept": "application/json",
     };
     http.Response response = await http.get(    //데이터를 조회할 때 사용
+      //응답결과는 http.Response 타입으로 전달. Response 객체의 statusCode 속성으로 응답 상태 코드 확인 가능
+      //서버에서 전달 받은 데이터는 body 속성으로 얻을 수 있다.
         Uri.parse('https://jsonplaceholder.typicode.com/posts/1'),
         headers: headers);
     if (response.statusCode == 200) {
