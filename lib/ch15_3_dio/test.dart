@@ -23,7 +23,7 @@ class MyAppState extends State<MyApp> {
     try {
       var dio = Dio(BaseOptions(  //dio 객체의 생성자 매개변수로 BaseOptions 객체를 지정. 다양하게 설정 가능
           baseUrl: "https://reqres.in/api/",    //서버 공통 URL
-          connectTimeout: 5000,
+          connectTimeout: 5000,   //dio 5.0.0 부터 뭐가 달라져서 오류 생기는 듯?
           receiveTimeout: 5000,
           headers: {
             HttpHeaders.contentTypeHeader: 'application/json',  //공통URL뒤 path부분
