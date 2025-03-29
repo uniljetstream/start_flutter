@@ -25,7 +25,7 @@ class MainActivity : FlutterActivity() {
             channel.send("Hello from Android") { replay -> Log.d("msg", "reply : $replay") }    //send() 함수의 두번째 매개변수는 다트에서 반환하는 결과를 받는 함수
         }*/
 
-        //메서드 채널 테스트
+        /*메서드 채널 테스트
         var methodChannel =
             MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "myMethodChannel")
         methodChannel.setMethodCallHandler { call, result ->
@@ -48,6 +48,15 @@ class MainActivity : FlutterActivity() {
             } else {
                 result.notImplemented()
             }
-        }
+        }*/
+        val eventChannel = EventChannel(flutterEngine.dartExecutor, "eventChannel");
+        eventChannel.setStreamHandler(object : EventChannel.StreamHandler {
+            override fun onListen(p0: Any?, p1: EventChannel.EventSink?) {
+                io.flutter.Log.d("platform", "onListen.....")
+                p1?.success("send event data..from native") //데이터 보내기
+            }
+            override fun onCancel(p0: Any?) {
+            }
+        })
     }
 }
