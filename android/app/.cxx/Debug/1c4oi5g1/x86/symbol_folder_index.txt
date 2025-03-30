@@ -1,0 +1,1 @@
+/home/wins/workingspace/start_flutter/build/app/intermediates/cxx/Debug/1c4oi5g1/obj/x86
