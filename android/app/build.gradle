@@ -18,6 +18,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
+    buildFeatures {
+        coreLibraryDesugaring true
+    }
+
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8
     }
@@ -50,4 +54,10 @@ android {
     defaultConfig {
         minSdkVersion 23
     }
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5' // 최신 버전으로 업데이트
 }
