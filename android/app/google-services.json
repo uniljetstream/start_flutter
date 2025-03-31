@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "118957354156",
+    "project_id": "pratic-34",
+    "storage_bucket": "pratic-34.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118957354156:android:adb2dd0b946c8ba6af4309",
+        "android_client_info": {
+          "package_name": "com.example.start_book"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNWkyleuNg1S3693mLiXjGrH4nSUV78mM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
